@@ -61,11 +61,11 @@ const Articles = () => {
             <ul className='grid grid-cols-2 gap-16 lg:gap-16 md:grid-cols-1 md:gap-y-16'>
                 
                 <FeaturedArticles
-                title="Build A Custom Pagination Component In Reactjs From Scratch"
+                title=" A Custom Pagination Component In Reactjs From Scratch"
                 summary="Learn how to build a custom pagination component in ReactJS from scratch. 
                 Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
                 time="9 min read"
-                link="/"
+                link="https://medium.com/@goelkartik235/build-a-custom-pagination-component-in-reactjs-from-scratch-b2011c845a61"
                 img={article1}
                 />
 
