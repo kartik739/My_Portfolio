@@ -33,7 +33,7 @@ export default function Home() {
               xl:!text-5xl lg:!text-center ld:!text=6xl md:!text-5xl sm:!text-3xl' />
 
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-              I'm a skilled full-stack developer specializing in frontend, blockchain, DSA, and cybersecurity.
+              I am a skilled full-stack developer specializing in frontend, blockchain, DSA, and cybersecurity.
                I excel in React.js, creating innovative web applications with captivating interfaces.
               </p>
               <div className='flex items-centers self-start mt-2 lg:self-center '>
