@@ -5,7 +5,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react' 
-import project1 from "../../public/images/projects/agency-website-cover-image.jpg"
+import project1 from "../../public/images/projects/Screenshot 2023-06-02 185829.png"
 import {motion} from "framer-motion";
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -90,13 +90,12 @@ const Projects = () => {
                 
                 <div className='col-span-12'>
                     <FeaturedProject
-                    title="Crypto Screener Application"
+                    title="My Portfolio Website"
                     img={project1}
-                    summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                    local currency."
+                    summary="The portfolio website project is built using React.js, Next.js, and Tailwind CSS.
+                     It features a dark mode option and is fully responsive, providing a seamless user experience across different devices."
                     link="/"
-                    github="/"
+                    github="https://github.com/kartik739/My_Portfolio"
                     type="Featured Project"
                     />
                 </div>

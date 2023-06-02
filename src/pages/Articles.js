@@ -62,57 +62,40 @@ const Articles = () => {
                 
                 <FeaturedArticles
                 title=" A Custom Pagination Component In Reactjs From Scratch"
-                summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-                Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
+                summary="Learn how to build a custom pagination component in ReactJS from scratch.Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
                 time="9 min read"
                 link="https://medium.com/@goelkartik235/build-a-custom-pagination-component-in-reactjs-from-scratch-b2011c845a61"
                 img={article1}
                 />
 
                 <FeaturedArticles
-                title="Build A Custom Pagination Component In Reactjs From Scratch"
-                summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-                Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-                time="9 min read"
-                link="/"
+                title="Creating Loading Screen in ReactJs: A Short Guide"
+                summary="This guide explores creating a loading screen in React.js,
+                 allowing for smoother user experiences during data fetching or heavy computations."
+                time="3 min read"
+                link="https://medium.com/@goelkartik235/creating-a-loading-screen-in-react-js-a-step-by-step-guide-78df937723b"
                 img={article2}
                 />
 
                 <FeaturedArticles
-                title="Build A Custom Pagination Component In Reactjs From Scratch"
-                summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-                Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-                time="9 min read"
-                link="/"
+                title="form Validation in reactjs using custom react hook"
+                summary="This blog post explains how to implement form validation in React.js
+                 using a custom hook, enhancing code reusability and improving user experience."
+                time="2 min read"
+                link="https://medium.com/@goelkartik235/introduction-49ada1f5aac2"
                 img={article3}
                 />
 
-                <FeaturedArticles
-                title="Build A Custom Pagination Component In Reactjs From Scratch"
-                summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-                Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-                time="9 min read"
-                link="/"
+               <FeaturedArticles
+                title="Create model component in react using react portals"
+                summary="Learn how to create a modal component in React using React Portals. 
+                React Portals allow rendering content outside the component hierarchy, enabling the creation of flexible and reusable modals."
+                time="4 min read"
+                link="https://medium.com/@goelkartik235/create-model-component-in-react-using-react-portals-1af757c768d3"
                 img={article4}
                 />
 
-                <FeaturedArticles
-                title="Build A Custom Pagination Component In Reactjs From Scratch"
-                summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-                Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-                time="9 min read"
-                link="/"
-                img={article5}
-                />
-
-                <FeaturedArticles
-                title="Build A Custom Pagination Component In Reactjs From Scratch"
-                summary="Learn how to build a custom pagination component in ReactJS from scratch. 
-                Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-                time="9 min read"
-                link="/"
-                img={article6}
-                />
+               
             </ul>
         </Layout>
     </main>
