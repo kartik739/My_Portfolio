@@ -46,7 +46,7 @@ const Experience = () => {
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     
                     <Details 
-                    position="Software Engineer" company="Google"
+                    position="Software Engineer" company="XYZ"
                     companyLink="http://www.google.com"
                     time="2022-Present" address="Mountain View, CA"
                     work="Worked on a team responsible for developing new features for Google's 
@@ -54,7 +54,7 @@ const Experience = () => {
                     developing new tools for data analysis and visualization."/>
                 
                     <Details 
-                    position="Software Engineer" company="Google"
+                    position="Software Engineer" company="XYZ"
                     companyLink="http://www.google.com"
                     time="2022-Present" address="Mountain View, CA"
                     work="Worked on a team responsible for developing new features for Google's 
@@ -62,7 +62,7 @@ const Experience = () => {
                     developing new tools for data analysis and visualization."/>
 
                     <Details 
-                    position="Software Engineer" company="Google"
+                    position="Software Engineer" company="XYZ"
                     companyLink="http://www.google.com"
                     time="2022-Present" address="Mountain View, CA"
                     work="Worked on a team responsible for developing new features for Google's 
@@ -70,7 +70,7 @@ const Experience = () => {
                     developing new tools for data analysis and visualization."/>
 
                     <Details 
-                    position="Software Engineer" company="Google"
+                    position="Software Engineer" company="XYZ"
                     companyLink="http://www.google.com"
                     time="2022-Present" address="Mountain View, CA"
                     work="Worked on a team responsible for developing new features for Google's 
