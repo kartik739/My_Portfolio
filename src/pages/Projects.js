@@ -74,7 +74,7 @@ const Project = ({type, title, img, link, github}) =>{
         </article>
     )
 }
-
+// projects 
 const Projects = () => {
   return (
     <>
