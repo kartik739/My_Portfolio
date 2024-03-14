@@ -82,7 +82,7 @@ const about = () => {
                  </span>
                  <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center
                   md:text-lg sm:text-base xs:text-sm'> 
-                    Hackathon Attended
+                    Leetcode problem solved
                  </h2>
             </div>
             <div className='flex flex-col items-end justified-center xl:items-center'>
