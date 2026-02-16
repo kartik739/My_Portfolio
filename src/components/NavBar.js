@@ -28,7 +28,7 @@ const CustomMobileLink = ({href, title, className="", toggle}) =>{
         router.push(href)
     }
     return(
-        <button href={href} className={`${className} relative group text-light dark:text-dark my-2`} onClick={handleClick}>
+        <button type="button" className={`${className} relative group text-light dark:text-dark my-2`} onClick={handleClick}>
                {title}
             <span className={`h-[1px] inline-block w-0 bg-light absolute left-0 -bottom-0.5
              group-hover:w-full transition-[width] ease duration-300 dark:bg-dark
@@ -53,7 +53,7 @@ const NavBar = () => {
      lg:px-16 md:px-12 sm:px-8'
     >
 
-        <button className=' flex-col justify-center items-center hidden lg:flex' onClick={handleClick}>
+        <button type="button" className='flex flex-col justify-center items-center hidden lg:flex' onClick={handleClick} aria-label={isOpen ? 'Close menu' : 'Open menu'} aria-expanded={isOpen}>
             <span className={` dark:bg-light bg-dark transition-all duration-300 ease-out  block h-0.5 w-6 rounded-sm  ${isOpen ? 'rotate-45 translate-y-1':'-translate-y-0.5 '}`}></span>
             <span className={`  dark:bg-light bg-dark transition-all duration-300 ease-out  block h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0':'opacity-100'}`}></span>
             <span className={` dark:bg-light bg-dark transition-all duration-300 ease-out  block h-0.5 w-6 rounded-sm  ${isOpen ? '-rotate-45 -translate-y-1':'translate-y-0.5 '}`}></span>
@@ -69,27 +69,27 @@ const NavBar = () => {
         
             <nav className="flex items-center justify-center flex-wrap"
         >
-            <motion.a href="https://twitter.com/kartikgoel007" target={"_blank"}
+            <motion.a href="https://twitter.com/kartikgoel007" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile"
             whileHover={{y:-2}}
             className="w-6 mr-3 "
             whileTap={{scale:0.9}}>
                 <TwitterIcon />
             </motion.a>
 
-            <motion.a href="https://github.com/kartik739" target={"_blank"}
+            <motion.a href="https://github.com/kartik739" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"
             whileHover={{y:-2}}
             className="w-6 mx-3 bg-light rounded-full dark:bg-dark"
             whileTap={{scale:0.9}}>
                 <GithubIcon />
             </motion.a>
 
-            <motion.a href="https://linkedin.com/in/kartikgoel001" target={"_blank"}
+            <motion.a href="https://linkedin.com/in/kartikgoel001" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"
             whileHover={{y:-2}}
             className="w-6 ml-3"
             whileTap={{scale:0.9}}>
                 <LinkedInIcon />
             </motion.a>
-            <button onClick = {() => setMode(mode === "light" ? "dark":"light")}
+            <button type="button" onClick={() => setMode(mode === "light" ? "dark" : "light")} aria-label={mode === "light" ? "Switch to dark mode" : "Switch to light mode"}
             className={`ml-3 flex items-center justify-center rounded-full p-1
             ${mode === "light" ? "bg-dark text-light":"bg-light text-dark"}
             `}>
@@ -119,29 +119,27 @@ const NavBar = () => {
             <nav className="flex items-center justify-center flex-wrap mt-2"
             initial={{scale:0, opacity:0, x: "50%" ,y: "50%"}}
             animate={{scale:1, opacity:1}}>
-            <motion.a
-            
-            href="https://twitter.com/kartikgoel007" target={"_blank"}
+            <motion.a href="https://twitter.com/kartikgoel007" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile"
             whileHover={{y:-2}} 
             className="w-6 mr-3 sm:mx-1 "
             whileTap={{scale:0.9}}>
                 <TwitterIcon />
             </motion.a>
 
-            <motion.a href="https://github.com/kartik739" target={"_blank"}
+            <motion.a href="https://github.com/kartik739" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"
             whileHover={{y:-2}}
             className="w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
             whileTap={{scale:0.9}}>
                 <GithubIcon />
             </motion.a>
 
-            <motion.a href="https://linkedin.com/in/kartikgoel001" target={"_blank"}
+            <motion.a href="https://linkedin.com/in/kartikgoel001" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"
             whileHover={{y:-2}}
             className="w-6 ml-3 sm:mx-1"
             whileTap={{scale:0.9}}>
                 <LinkedInIcon />
             </motion.a>
-            <button onClick = {() => setMode(mode === "light" ? "dark":"light")}
+            <button type="button" onClick={() => setMode(mode === "light" ? "dark" : "light")} aria-label={mode === "light" ? "Switch to dark mode" : "Switch to light mode"}
             className={`ml-3 flex items-center justify-center rounded-full p-1
             ${mode === "light" ? "bg-dark text-light":"bg-light text-dark"}
             `}>

@@ -28,17 +28,15 @@ const FeaturedArticles = ({img, title, time, summary, link}) => {
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark 
             rounded-br-3xl'>
                 </div>
-            <Link href={link} target="_blank" className='w-full inline-block cursor-pointer overflow-hidden
-             rounded-lg'>
+            <Link href={link} target="_blank" rel="noopener noreferrer" className='w-full inline-block cursor-pointer overflow-hidden rounded-lg'>
                 <FramerImage src={img} alt={title} className="w-full h-auto" 
                 whileHover={{scale:1.05}}
                 transition={{duration:0.2}}
                 priority
-                size="(max-width:768px) 100vw,
-                (max-width:1200px) 50v, 33vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
             </Link>
-            <Link href={link} target="_blank">
+            <Link href={link} target="_blank" rel="noopener noreferrer">
                 <h2 className='capitalize text-2xl font-bold my-2 hover:underline xs:text-lg'>{title}</h2>
             </Link>
             <p className='text-sm mb-2'>{summary}</p>
@@ -51,8 +49,8 @@ const Articles = () => {
   return (
     <>
     <Head>
-        <title>Kartik Goel | Articles page</title>
-        <meta name="description" content = "any description" />
+        <title>Kartik Goel | Articles</title>
+        <meta name="description" content="Technical articles and tutorials by Kartik Goel on React, pagination, loading screens, and form validation." />
     </Head>
     <TransitionEffect />
     <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
@@ -87,7 +85,7 @@ const Articles = () => {
                 />
 
                <FeaturedArticles
-                title="Create model component in react using react portals"
+                title="Create modal component in React using React Portals"
                 summary="Learn how to create a modal component in React using React Portals. 
                 React Portals allow rendering content outside the component hierarchy, enabling the creation of flexible and reusable modals."
                 time="4 min read"
